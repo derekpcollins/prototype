@@ -1,0 +1,24 @@
+/*
+
+.box        - Creates a box with a border, rounded corners and some padding.
+.table-box  - Pretty much a box w/o padding so that the table goes right up to the edge.
+
+*/
+
+// Include dependencies
+@import "variables";
+@import "mixins";
+
+.box {
+  background: #fff;
+  border: $defaultBorderSize solid $defaultDarkColor;
+  @include border-radius;
+  @include box-sizing(border-box);
+  @include clearfix;
+  padding: $defaultPadding;
+  margin-bottom: $defaultBottomMargin;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

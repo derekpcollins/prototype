@@ -1,0 +1,15 @@
+/*
+
+This is the main prototype stylesheet that includes all the other stylesheets.
+
+*/
+
+// Include dependencies
+@import "variables";
+@import "mixins";
+
+@import "reset";
+@import "layout";
+@import "grid";
+@import "general";
+@import "boxes";

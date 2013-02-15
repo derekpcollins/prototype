@@ -1,0 +1,9 @@
+// Include dependencies
+@import "variables";
+@import "mixins";
+
+.container {
+  @include clearfix;
+  margin: 0 auto;
+  width: 960px;
+}
