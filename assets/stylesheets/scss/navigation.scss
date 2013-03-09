@@ -1,0 +1,147 @@
+/*
+
+Defines a few different types of navigation styles.
+
+.text-nav         - A simple text-based nav with a bullet between each link
+.breadcrumb-nav   - A simple text-based nav with a right arrow between each link showing progression
+.box-nav          - A solid colored box with rounded corners that contains links.
+.tab-nav          - Each link is contianed in a tab.
+
+*/
+
+// Include dependencies
+@import "variables";
+@import "mixins";
+
+/* TEXT-BASED NAV: =text-nav
+------------------------------------------------------------*/
+.text-nav {
+	margin-bottom: $defaultBottomMargin;
+
+  a {
+
+    &:after {
+      content: "\2022";
+      display: inline-block;
+      margin: 0 5px 0 7px;
+    }
+
+    &:last-child {
+			margin-right: 0;
+
+			&:after {
+	      content: '';
+	      margin-right: 0;
+	    }
+		}
+
+    &.active {
+			font-weight: bold;
+      text-decoration: none;
+
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+}
+
+/* BREADCRUMB NAV: =breadcrumb-nav
+------------------------------------------------------------*/
+.breadcrumb-nav {
+	@extend .text-nav;
+
+  a {
+
+    &:after {
+      content: "\203A";
+			margin-left: 8px;
+    }
+  }
+}
+
+/* TABBED NAV: =tab-nav
+------------------------------------------------------------*/
+.tab-nav {
+
+  a {
+    border: $defaultBorderSize solid $defaultDarkColor;
+    border-bottom: 0;
+		@include border-radius-top;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 12px;
+    text-decoration: none;
+
+    &.active {
+      background: $defaultDarkColor;
+      border-color: transparent;
+      color: #fff;
+
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+
+	& + .box {
+		@include border-radius;
+		@include border-radius-top-left(0);
+	}
+}
+
+.box > .tab-nav {
+	border-bottom: 1px solid $defaultDarkColor;
+	@include clearfix;
+	margin-top: -$defaultPadding;
+	margin-right: -$defaultPadding;
+	margin-bottom: $defaultPadding;
+	margin-left: -$defaultPadding;
+
+	a {
+		border: 0;
+		border-right: 1px solid $defaultDarkColor;
+		@include border-radius(0);
+		float: left;
+		margin: 0 0 -1px 0;
+		padding: 10px $defaultPadding;
+
+		&.active {
+			background: #fff;
+			border-bottom: 1px solid #fff;
+			color: $defaultDarkColor;
+		}
+	}
+}
+
+/* BOX NAV: =box-nav
+------------------------------------------------------------*/
+.box-nav {
+	border: $defaultBorderSize solid $defaultDarkColor;
+	@include border-radius;
+	@include clearfix;
+	margin-bottom: $defaultBottomMargin;
+
+	a {
+		background: #fff;
+		border-right: $defaultBorderSize solid $defaultDarkColor;
+		display: block;
+		float: left;
+		font-weight: bold;
+		padding: 10px 12px;
+		text-decoration: none;
+
+		&.active {
+			background: $defaultDarkColor;
+			color: #fff;
+		}
+	}
+
+	&.inline {
+		display: inline-block;
+
+		a:last-child {
+			border-right: 0;
+		}
+	}
+}

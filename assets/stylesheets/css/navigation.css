@@ -1,0 +1,119 @@
+/*
+
+Defines a few different types of navigation styles.
+
+.text-nav         - A simple text-based nav with a bullet between each link
+.breadcrumb-nav   - A simple text-based nav with a right arrow between each link showing progression
+.box-nav          - A solid colored box with rounded corners that contains links.
+.tab-nav          - Each link is contianed in a tab.
+
+*/
+/* TEXT-BASED NAV: =text-nav
+------------------------------------------------------------*/
+.text-nav, .breadcrumb-nav {
+  margin-bottom: 20px; }
+  .text-nav a:after, .breadcrumb-nav a:after {
+    content: "\2022";
+    display: inline-block;
+    margin: 0 5px 0 7px; }
+  .text-nav a:last-child, .breadcrumb-nav a:last-child {
+    margin-right: 0; }
+    .text-nav a:last-child:after, .breadcrumb-nav a:last-child:after {
+      content: '';
+      margin-right: 0; }
+  .text-nav a.active, .breadcrumb-nav a.active {
+    font-weight: bold;
+    text-decoration: none; }
+    .text-nav a.active:hover, .breadcrumb-nav a.active:hover {
+      cursor: default; }
+
+/* BREADCRUMB NAV: =breadcrumb-nav
+------------------------------------------------------------*/
+.breadcrumb-nav a:after {
+  content: "\203A";
+  margin-left: 8px; }
+
+/* TABBED NAV: =tab-nav
+------------------------------------------------------------*/
+.tab-nav a {
+  border: 3px solid #333333;
+  border-bottom: 0;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 12px;
+  text-decoration: none; }
+  .tab-nav a.active {
+    background: #333333;
+    border-color: transparent;
+    color: #fff; }
+    .tab-nav a.active:hover {
+      cursor: default; }
+.tab-nav + .box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-left-radius: 0; }
+
+.box > .tab-nav {
+  border-bottom: 1px solid #333333;
+  zoom: 1;
+  margin-top: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  margin-left: -20px; }
+  .box > .tab-nav:before, .box > .tab-nav:after {
+    content: "";
+    display: table; }
+  .box > .tab-nav:after {
+    clear: both; }
+  .box > .tab-nav a {
+    border: 0;
+    border-right: 1px solid #333333;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    float: left;
+    margin: 0 0 -1px 0;
+    padding: 10px 20px; }
+    .box > .tab-nav a.active {
+      background: #fff;
+      border-bottom: 1px solid #fff;
+      color: #333333; }
+
+/* BOX NAV: =box-nav
+------------------------------------------------------------*/
+.box-nav {
+  border: 3px solid #333333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  zoom: 1;
+  margin-bottom: 20px; }
+  .box-nav:before, .box-nav:after {
+    content: "";
+    display: table; }
+  .box-nav:after {
+    clear: both; }
+  .box-nav a {
+    background: #fff;
+    border-right: 3px solid #333333;
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding: 10px 12px;
+    text-decoration: none; }
+    .box-nav a.active {
+      background: #333333;
+      color: #fff; }
+  .box-nav.inline {
+    display: inline-block; }
+    .box-nav.inline a:last-child {
+      border-right: 0; }

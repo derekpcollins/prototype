@@ -1,0 +1,89 @@
+/*
+
+Buttons can be used as links or to submit forms
+
+:disabled   	- Reduces transparency on a button to indicate that it is disabled
+.small      	- Reduces font size and padding to create a small button
+
+.btn-group		- Allows buttons to be grouped into a parent container and also allows elements to be positioned relative to it
+.btn-toolbar	- Allows button groups to be grouped together if need be
+
+*/
+
+// Include dependencies
+@import "variables";
+@import "mixins";
+
+.button {
+	border: $defaultBorderSize solid $defaultDarkColor;
+	@include border-radius;
+	color: $defaultDarkColor;
+	background: $defaultLightColor;
+	display: inline-block;
+	font-weight: bold;
+	padding: 8px 12px;
+	text-decoration: none;
+
+	/*&.primary {
+		border: 3px solid transparent;
+		background: $defaultDarkColor;
+		color: #fff;
+	}*/
+
+	&:disabled,
+	&.disabled {
+		opacity: .4;
+
+		&:hover {
+			cursor: default;
+		}
+	}
+
+	&.full {
+		@include box-sizing;
+		width: 100%;
+	}
+
+	&.small {
+		padding: 0 5px;
+		font-size: 10px;
+	}
+
+	&.active {
+		/* background: $defaultMidColor */
+	}
+
+}
+
+.button-group {
+	@include clearfix();
+	display: inline-block;
+	position: relative;
+
+	.button {
+		@include border-radius(0);
+		float: left;
+
+		& + .button {
+			margin-left: -$defaultBorderSize;
+		}
+
+		&:first-child {
+			@include border-radius-left;
+		}
+
+		&:last-child {
+			@include border-radius-right;
+		}
+	}
+
+}
+
+.button-toolbar {
+	@include clearfix();
+	display: inline-block;
+
+	.button-group {
+		margin-bottom: 0;
+	}
+}

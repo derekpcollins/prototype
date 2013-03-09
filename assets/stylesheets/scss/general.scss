@@ -8,45 +8,54 @@ Defines some general and convenience styles.
 @import "variables";
 @import "mixins";
 
-body {
-  font-family: $defaultFontFamily;
-}
-
 .align-left {
-  text-align: left;
+	text-align: left;
 }
 .align-right {
-  text-align: right;
+	text-align: right;
 }
 .align-center {
-  text-align: center;
+	text-align: center;
 }
 
 i {
-  font-family: 'Pictos';
-  font-style: normal;
-  line-height: auto;
-  
-  &.large-icon {
-    font-size: 130px;
-    line-height: 120px;
-  }
+	font-family: 'Pictos';
+	font-style: normal;
+	line-height: auto;
+	
+	&.large-icon {
+		font-size: 130px;
+		line-height: 120px;
+	}
 }
 
 hr {
-  border: 0;
-  border-top: 1px solid $defaultDarkColor;
-  margin: $defaultPadding 0;
-  
-  &.full {
-    margin-right: -$defaultPadding;
-    margin-left: -$defaultPadding;
-  }
-  &.thick {
-    border-top: $defaultBorderSize solid $defaultDarkColor;
-  }
+	border: 0;
+	border-top: 1px solid $defaultDarkColor;
+	margin: $defaultPadding 0;
+	
+	&.full {
+		margin-right: -$defaultPadding;
+		margin-left: -$defaultPadding;
+	}
+	&.thick {
+		border-top: $defaultBorderSize solid $defaultDarkColor;
+	}
+}
+
+.success-message {
+	font-weight: bold;
+	font-style: italic;
+	
+	&:before {
+		content: '2';
+		font-family: 'Pictos';
+		font-size: 18px;
+		font-style: normal;
+		margin-right: 4px;
+	}
 }
 
 .disabled {
-  opacity: .4;
+	opacity: .4;
 }

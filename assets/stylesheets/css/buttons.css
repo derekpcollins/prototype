@@ -1,0 +1,83 @@
+/*
+
+Buttons can be used as links or to submit forms
+
+:disabled   	- Reduces transparency on a button to indicate that it is disabled
+.small      	- Reduces font size and padding to create a small button
+
+.btn-group		- Allows buttons to be grouped into a parent container and also allows elements to be positioned relative to it
+.btn-toolbar	- Allows button groups to be grouped together if need be
+
+*/
+.button {
+  border: 3px solid #333333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #333333;
+  background: white;
+  display: inline-block;
+  font-weight: bold;
+  padding: 8px 12px;
+  text-decoration: none;
+  /*&.primary {
+  	border: 3px solid transparent;
+  	background: $defaultDarkColor;
+  	color: #fff;
+  }*/ }
+  .button:disabled, .button.disabled {
+    opacity: .4; }
+    .button:disabled:hover, .button.disabled:hover {
+      cursor: default; }
+  .button.full {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%; }
+  .button.small {
+    padding: 0 5px;
+    font-size: 10px; }
+  .button.active {
+    /* background: $defaultMidColor */ }
+
+.button-group {
+  zoom: 1;
+  display: inline-block;
+  position: relative; }
+  .button-group:before, .button-group:after {
+    content: "";
+    display: table; }
+  .button-group:after {
+    clear: both; }
+  .button-group .button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    float: left; }
+    .button-group .button + .button {
+      margin-left: -3px; }
+    .button-group .button:first-child {
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-bottom-left-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-bottomleft: 5px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px; }
+    .button-group .button:last-child {
+      -webkit-border-top-right-radius: 5px;
+      -webkit-border-bottom-right-radius: 5px;
+      -moz-border-radius-topright: 5px;
+      -moz-border-radius-bottomright: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px; }
+
+.button-toolbar {
+  zoom: 1;
+  display: inline-block; }
+  .button-toolbar:before, .button-toolbar:after {
+    content: "";
+    display: table; }
+  .button-toolbar:after {
+    clear: both; }
+  .button-toolbar .button-group {
+    margin-bottom: 0; }

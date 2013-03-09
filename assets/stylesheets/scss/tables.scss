@@ -1,0 +1,84 @@
+/*
+
+Tables are used to display tabular data.
+
+.sortable	- Adds an arrow after the column heading to denote that the column can be 
+						sorted by ascending or descending order. Also, changes the cursor to a 
+						pointer on hover.
+.asc			- DEFAULT: Arrow on sortable columns points down.
+.desc			- Arrow on sortable columns points up.
+
+*/
+
+// Include dependencies
+@import "variables";
+@import "mixins";
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: $defaultFontSize;
+	width: 100%;
+	
+	th, td {
+		padding: 12px $defaultPadding;
+		text-align: left;
+	}
+	
+	thead {
+		th {
+			border-bottom: $defaultBorderSize solid $defaultDarkColor;
+			border-right: 1px solid $defaultDarkColor;
+			
+			&:last-child {
+				border-right: 0;
+			}
+			
+			&.sortable {
+				span {
+					padding-right: 15px;
+					position: relative;
+					
+					&:after {
+						content: '';
+						@include arrow-down(5px, $defaultDarkColor);
+						position: absolute;
+						right: 0;
+						top: 6px;
+					}
+				}
+				
+				&:hover {
+					cursor: pointer;
+				}
+				
+				&.asc:after {
+					@include arrow-down(5px, $defaultDarkColor);
+				}
+				
+				&.desc:after {
+					@include arrow-down(0, transparent);
+					@include arrow-up(5px, $defaultDarkColor);
+				}
+			}
+		}
+	}
+	tbody {
+		th {
+			border-bottom: 1px solid $defaultDarkColor;
+			border-right: 1px solid $defaultDarkColor;
+		}
+		td {
+			border-bottom: 1px solid $defaultDarkColor;
+			border-right: 1px solid $defaultDarkColor;
+			
+			&:last-child {
+				border-right: 0;
+			}
+		}
+		tr:last-child td,
+		tr:last-child th {
+			border-bottom: 0;
+		}
+	}
+}

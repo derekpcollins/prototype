@@ -1,7 +1,9 @@
 /*
 
-.box        - Creates a box with a border, rounded corners and some padding.
-.table-box  - Pretty much a box w/o padding so that the table goes right up to the edge.
+Boxes are used as the basic building blocks for layouts.
+
+.box 				- Creates a box with a border, rounded corners and some padding.
+.table-box 	- Pretty much a box w/o padding so that the table goes right up to the edge.
 
 */
 
@@ -10,15 +12,58 @@
 @import "mixins";
 
 .box {
-  background: #fff;
-  border: $defaultBorderSize solid $defaultDarkColor;
-  @include border-radius;
-  @include box-sizing(border-box);
-  @include clearfix;
-  padding: $defaultPadding;
-  margin-bottom: $defaultBottomMargin;
+	background: #fff;
+	border: $defaultBorderSize solid $defaultDarkColor;
+	@include border-radius;
+	@include box-sizing(border-box);
+	@include clearfix;
+	padding: $defaultPadding;
+	margin-bottom: $defaultBottomMargin;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	header,
+	footer {
+		@include clearfix;
+		clear: both;
+		padding: $defaultPadding;
+		position: relative;
+	}
+	header {
+		border-bottom: $defaultBorderSize solid $defaultDarkColor;
+
+		h1, h2, h3, h4, p {
+			margin-bottom: 0;
+		}
+	}
+	footer {
+		border-top: $defaultBorderSize solid $defaultDarkColor;
+	}
+
+	& > header {
+		margin-top: -$defaultPadding;
+		margin-right: -$defaultPadding;
+		margin-bottom: $defaultPadding;
+		margin-left: -$defaultPadding;
+	}
+	& > footer {
+		margin-top: $defaultPadding;
+		margin-right: -$defaultPadding;
+		margin-bottom: -$defaultPadding;
+		margin-left: -$defaultPadding;
+	}
+}
+
+.table-box {
+	@extend .box;
+	padding: 0;
+
+	& > header {
+		margin: 0;
+	}
+	& > footer {
+		margin: 0;
+	}
 }

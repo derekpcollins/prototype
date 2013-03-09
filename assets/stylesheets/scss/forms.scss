@@ -1,0 +1,121 @@
+/*
+
+Defines form styles.
+
+.note						- Used for adding notes above or below form elements.
+.error-message	- Similarly, you might need to add an error message benath a form element
+
+*/
+
+// Include dependencies
+@import "variables";
+@import "mixins";
+
+form {
+	label {
+		display: block;
+		font-weight: bold;
+		margin-bottom: 4px;
+
+		&.inline {
+			display: inline;
+			font-weight: normal;
+		}
+	}
+	input[type="text"],input[type="password"] {
+		border: 1px solid $defaultDarkColor;
+		@include border-radius;
+		@include box-sizing;
+		color: $defaultDarkColor;
+		font-family: $defaultFontFamily;
+		font-size: $defaultFontSize;
+		padding: 10px;
+		outline: none;
+		width: 100%;
+	}
+	textarea {
+		border: 1px solid $defaultDarkColor;
+		@include border-radius;
+		@include box-sizing;
+		color: $defaultDarkColor;
+		font-family: $defaultFontFamily;
+		font-size: $defaultFontSize;
+		padding: 10px;
+		outline: none;
+		height: 150px;
+		width: 100%;
+	}
+
+	.note {
+		display: block;
+	}
+
+	.error-message {
+		display: block;
+	}
+
+	footer {
+		margin-top: 20px;
+		margin-right: -$defaultPadding;
+		margin-bottom: -$defaultPadding;
+		margin-left: -$defaultPadding;
+	}
+}
+::-webkit-input-placeholder {
+	color: #bbb;
+	font-family: $defaultFontFamily;
+	font-weight: normal;
+}
+:-moz-placeholder {
+	color: #bbb;
+	font-family: $defaultFontFamily;
+	font-weight: normal;
+}
+
+// Custom form element styles
+// Source: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
+
+input[type="radio"] {
+	@include appearance(none);
+	background: #fff;
+	border: 1px solid $defaultDarkColor;
+	@include border-radius(8px);
+	display: inline-block;
+	padding: 7px;
+	position: relative;
+	vertical-align: bottom;
+
+	&:checked:after {
+		background: $defaultDarkColor;
+		@include border-radius;
+		content: '';
+		display: block;
+		height: 6px;
+		left: 4px;
+		position: absolute;
+		top: 4px;
+		width: 6px;
+	}
+}
+
+input[type="checkbox"] {
+	@include appearance(none);
+	background: #fff;
+	border: 1px solid $defaultDarkColor;
+	@include border-radius(3px);
+	display: inline-block;
+	padding: 7px;
+	position: relative;
+	vertical-align: bottom;
+
+	&:checked:after {
+		content: '3';
+		font-family: 'Pictos';
+		font-size: 11px;
+		font-weight: normal;
+		display: block;
+		left: 2px;
+		position: absolute;
+		top: 2px;
+	}
+}

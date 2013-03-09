@@ -1,0 +1,17 @@
+/*
+
+Super basic, modified version of Eric Meyer's reset (meyerweb.com) that simply resets margins 
+and padding on most common elements and adds support for HTML5 elements. We may want to make 
+this a bit more robust in the future.
+
+*/
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }

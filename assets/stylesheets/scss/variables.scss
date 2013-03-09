@@ -1,13 +1,15 @@
-// Colors
-$defaultLightColor:   #fff;
-$defaultDarkColor:    #333;
-
-// Borders
-$defaultBorderSize: 3px;
-
-// Margins & Padding
+// Layout
+$siteWidth: 960px;
+$defaultFontFamily: 'proxima-nova', 'Helvetica Neue', sans-serif;
 $defaultBottomMargin: 20px;
 $defaultPadding: 20px;
+$defaultFontSize: 14px;
+$defaultLineHeight: 20px;
+$defaultBorderSize: 3px;
+$defaultTypeBottomMargin: 10px;
 
-// Typography
-$defaultFontFamily: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+// Colors
+
+$defaultLightColor:		#fff;
+$defaultDarkColor:		#333;
+$defaultMidColor:		#eee;

@@ -1,0 +1,119 @@
+/*
+
+Popovers can be used to provide subtextual information to help further explain something without taking up more space on the page.
+
+.above        - DEFAULT: The arrow will appear at the bottom of the popover
+.below        - The arrow will appear at the top of the popover
+.right        - The arrow will appear at the left of the popover
+.left         - The arrow will appear at the right of the popover
+.above-right  - The arrow will appear at the bottom-left of the popover
+.above-left   - The arrow will appear at the bottom-right of the popover
+.below-right  - The arrow will appear at the top-left of the popover
+.below-left   - The arrow will appear at the top-right of the popover
+
+*/
+
+// Include dependencies
+@import "variables";
+@import "mixins";
+
+.popover {
+	background: #fff;
+	border: $defaultBorderSize solid $defaultDarkColor;
+	@include border-radius;
+	@include clearfix;
+	display: block;
+	padding: 10px 12px;
+	position: absolute;
+	text-align: center;
+	width: 200px;
+
+	&.above {
+		left: 50%;
+		margin-left: -115px; /* (200+24+6)/2 */
+		bottom: 30px;
+
+		&:before {
+			@include arrow-down(14px, $defaultDarkColor);
+			bottom: -14px;
+			left: 50%;
+			margin-left: -14px;
+			position: absolute;
+		}
+
+		&:after {
+			@include arrow-down(10px, #fff);
+			bottom: -10px;
+			left: 50%;
+			margin-left: -10px;
+			position: absolute;
+		}
+	}
+
+	&.below {
+		left: 50%;
+		margin-left: -115px; /* (200+24+6)/2 */
+		top: 30px;
+
+		&:before {
+			@include arrow-up(14px, $defaultDarkColor);
+			top: -14px;
+			left: 50%;
+			margin-left: -14px;
+			position: absolute;
+		}
+
+		&:after {
+			@include arrow-up(10px, #fff);
+			top: -10px;
+			left: 50%;
+			margin-left: -10px;
+			position: absolute;
+		}
+	}
+
+	&.left {
+		left: 105px;
+		margin-top: -45px; /* (200+24+6)/2 */
+		top: 30px;
+
+		&:before {
+			@include arrow-left(14px, $defaultDarkColor);
+			left: 0;
+			top: 7px;
+			margin-left: -15px;
+			position: absolute;
+		}
+
+		&:after {
+			@include arrow-left(10px, #fff);
+			top: 11px;
+			left: 0;
+			margin-left: -11px;
+			position: absolute;
+		}
+	}
+
+	&.right {
+		right: 105px;
+		margin-top: -45px; /* (200+24+6)/2 */
+		top: 30px;
+
+		&:before {
+			@include arrow-right(14px, $defaultDarkColor);
+			right: 0;
+			top: 7px;
+			margin-right: -15px;
+			position: absolute;
+		}
+
+		&:after {
+			@include arrow-right(10px, #fff);
+			top: 11px;
+			right: 0;
+			margin-right: -11px;
+			position: absolute;
+		}
+	}
+
+}

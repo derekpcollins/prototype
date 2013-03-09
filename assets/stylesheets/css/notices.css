@@ -1,0 +1,42 @@
+/*
+
+Alerts are used in situations where greater focus and user action may be required. Alerts can be applied to both inline and global level UI elements, sections or pages.
+Alert style messaging is used when a user is interacting with an element, or has performed an action highlighting failure, success or greater awareness. Alerts should be no longer than a paragraph, informative and concise.
+Alert messaging is color coded to provide rapid visual feedback alongside the containing content. It is important to not rely completely on color alone, the containing content should define the alert message quickly and efficiently. The primary colors define the three main types of alerts; error, warning and success, which are red, yellow and green.
+
+.notice-box		- The base style for block notices
+.success		- Reward our users with simple, clear gratification.
+.warning		- A great way to provide a response to a user's action real-time or gaining their attention for an important message.
+.error			- Reserved for failure or severe messaging, provide clear, next-step information to instantly help the user gain further insight.
+
+*/
+.notice-box {
+  border: 3px solid #333333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  padding: 10px 30px 10px 15px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  position: relative; }
+  .notice-box a.close {
+    color: #333333;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 22px;
+    padding: 10px 13px;
+    text-decoration: none;
+    vertical-align: middle; }
+  .notice-box .icon:before {
+    font-family: 'Pictos';
+    content: attr(data-icon);
+    font-size: 24px;
+    padding-right: 7px;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased; }
+  .notice-box p {
+    margin: 0; }
+  .notice-box .button {
+    margin-top: 10px; }

@@ -5,5 +5,13 @@
 .container {
   @include clearfix;
   margin: 0 auto;
-  width: 960px;
+  width: $siteWidth;
+}
+
+section {
+	margin-bottom: 40px;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
 }

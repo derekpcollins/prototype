@@ -1,0 +1,59 @@
+/*
+
+Tables are used to display tabular data.
+
+.sortable	- Adds an arrow after the column heading to denote that the column can be 
+						sorted by ascending or descending order. Also, changes the cursor to a 
+						pointer on hover.
+.asc			- DEFAULT: Arrow on sortable columns points down.
+.desc			- Arrow on sortable columns points up.
+
+*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+  width: 100%; }
+  table th, table td {
+    padding: 12px 20px;
+    text-align: left; }
+  table thead th {
+    border-bottom: 3px solid #333333;
+    border-right: 1px solid #333333; }
+    table thead th:last-child {
+      border-right: 0; }
+    table thead th.sortable span {
+      padding-right: 15px;
+      position: relative; }
+      table thead th.sortable span:after {
+        content: '';
+        border-top: 5px solid #333333;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        position: absolute;
+        right: 0;
+        top: 6px; }
+    table thead th.sortable:hover {
+      cursor: pointer; }
+    table thead th.sortable.asc:after {
+      border-top: 5px solid #333333;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent; }
+    table thead th.sortable.desc:after {
+      border-top: 0 solid transparent;
+      border-right: 0 solid transparent;
+      border-left: 0 solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #333333;
+      border-left: 5px solid transparent; }
+  table tbody th {
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333; }
+  table tbody td {
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333; }
+    table tbody td:last-child {
+      border-right: 0; }
+  table tbody tr:last-child td,
+  table tbody tr:last-child th {
+    border-bottom: 0; }

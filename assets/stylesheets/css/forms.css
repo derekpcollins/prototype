@@ -1,0 +1,112 @@
+/*
+
+Defines form styles.
+
+.note						- Used for adding notes above or below form elements.
+.error-message	- Similarly, you might need to add an error message benath a form element
+
+*/
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px; }
+  form label.inline {
+    display: inline;
+    font-weight: normal; }
+form input[type="text"], form input[type="password"] {
+  border: 1px solid #333333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333333;
+  font-family: "proxima-nova", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  outline: none;
+  width: 100%; }
+form textarea {
+  border: 1px solid #333333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333333;
+  font-family: "proxima-nova", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  outline: none;
+  height: 150px;
+  width: 100%; }
+form .note {
+  display: block; }
+form .error-message {
+  display: block; }
+form footer {
+  margin-top: 20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  margin-left: -20px; }
+
+::-webkit-input-placeholder {
+  color: #bbb;
+  font-family: "proxima-nova", "Helvetica Neue", sans-serif;
+  font-weight: normal; }
+
+:-moz-placeholder {
+  color: #bbb;
+  font-family: "proxima-nova", "Helvetica Neue", sans-serif;
+  font-weight: normal; }
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 1px solid #333333;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 7px;
+  position: relative;
+  vertical-align: bottom; }
+  input[type="radio"]:checked:after {
+    background: #333333;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    content: '';
+    display: block;
+    height: 6px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    width: 6px; }
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 1px solid #333333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 7px;
+  position: relative;
+  vertical-align: bottom; }
+  input[type="checkbox"]:checked:after {
+    content: '3';
+    font-family: 'Pictos';
+    font-size: 11px;
+    font-weight: normal;
+    display: block;
+    left: 2px;
+    position: absolute;
+    top: 2px; }

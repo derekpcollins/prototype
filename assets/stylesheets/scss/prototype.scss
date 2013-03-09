@@ -11,5 +11,13 @@ This is the main prototype stylesheet that includes all the other stylesheets.
 @import "reset";
 @import "layout";
 @import "grid";
+@import "typography";
 @import "general";
 @import "boxes";
+@import "navigation";
+@import "buttons";
+@import "forms";
+@import "tables";
+@import "modals";
+@import "popovers";
+@import "helpers";

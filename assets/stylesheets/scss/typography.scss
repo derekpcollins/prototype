@@ -1,0 +1,74 @@
+/*
+
+Defines some basic typography styles.
+
+*/
+
+// Include dependencies
+@import "variables";
+@import "mixins";
+
+h1 {
+	font-size: 24px;
+	margin-bottom: $defaultTypeBottomMargin;
+}
+h2 {
+	font-size: 20px;
+	margin-bottom: $defaultTypeBottomMargin;
+}
+h3 {
+	font-size: 16px;
+	margin-bottom: $defaultTypeBottomMargin;
+}
+h4 {
+	font-size: $defaultFontSize;
+	margin-bottom: $defaultTypeBottomMargin;
+}
+p, .p {
+	font-size: $defaultFontSize;
+	line-height: $defaultLineHeight;
+	margin-bottom: $defaultTypeBottomMargin;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+ul, ol {
+	margin-bottom: $defaultBottomMargin;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+ol {
+	margin-left: 20px;
+}
+ul.disc {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+ul.circle {
+	list-style-type: circle;
+	margin-left: 20px;
+}
+ul.square {
+	list-style-type: square;
+	margin-left: 20px;
+}
+li {
+	font-size: $defaultFontSize;
+	line-height: $defaultLineHeight;
+	margin-bottom: $defaultTypeBottomMargin;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+a {
+	color: $defaultDarkColor;
+}
+
+big {
+	font-size: 24px;
+}

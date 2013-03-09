@@ -1,0 +1,44 @@
+/*
+
+Helpers can be used to provide help text to further explain something without taking up more space on the page.
+
+.above        - DEFAULT: The arrow will appear at the bottom of the popover
+.below        - The arrow will appear at the top of the popover
+.right        - The arrow will appear at the left of the popover
+.left         - The arrow will appear at the right of the popover
+.above-right  - The arrow will appear at the bottom-left of the popover
+.above-left   - The arrow will appear at the bottom-right of the popover
+.below-right  - The arrow will appear at the top-left of the popover
+.below-left   - The arrow will appear at the top-right of the popover
+
+*/
+.helper {
+  background: #333333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  zoom: 1;
+  color: #fff;
+  display: block;
+  padding: 4px 6px;
+  position: absolute;
+  text-align: center;
+  width: 60px; }
+  .helper:before, .helper:after {
+    content: "";
+    display: table; }
+  .helper:after {
+    clear: both; }
+  .helper.above {
+    left: 50%;
+    margin-left: -36px;
+    /* (60+12)/2 */
+    bottom: 25px; }
+    .helper.above:after {
+      border-top: 6px solid #333333;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+      bottom: -6px;
+      left: 50%;
+      margin-left: -6px;
+      position: absolute; }
