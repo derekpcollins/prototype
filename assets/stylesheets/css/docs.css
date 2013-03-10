@@ -1,0 +1,18 @@
+/*
+
+This is the stylesheet that is used for our documenting our styles.
+It includes all the prototpye styles and adds some extra styles specifically for the style guide.
+
+*/
+body {
+  font-family: 'Open Sans';
+  padding: 40px 0; }
+
+code.box {
+  background: #F0FAFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  padding: 20px; }
+
+#style-guide section {
+  margin: 40px 0; }
