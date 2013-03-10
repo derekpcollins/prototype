@@ -4,7 +4,7 @@ A minimalist rapid prototyping framework.
 
 ## Overview
 
-*Coming sooner or later*
+*This is still a work in progres, but if you're interested, take a look at the [Prototype Style Guide](http://derekpcollins.com/prototype/) that is slowly coming together.*
 
 ## License
 
