@@ -1,1 +1,955 @@
-Hello world!
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  
+    <title>Prototype - A minimalist rapid prototyping framework</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/stylesheets/css/prototype.css">
+    <link rel="stylesheet" href="assets/stylesheets/css/docs.css">
+  
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="container">
+
+        <h1>Prototype Style Guide</h1>
+        <p>The following is a guide to the elements and styles you can use when building prototypes. This is intended to be a living, breathing document that will change as we update it with new styles as we need them. I like to think of each of the elements as LEGO® bricks that can be used to build out your prototype.</p>
+
+        <hr>
+
+        <section id="the-grid">
+          <h2>The Grid</h2>
+          <p>For our purposes we just need a very basic grid to help us create columns in our prototypes. We have an 8-column grid based a site width of 960 pixels.</p>
+
+          <div class="grid">
+            <div class="col-1-2">
+              <div class="box">
+                <p class="align-center">1/2</p>
+              </div>
+            </div>
+            <div class="col-1-2">
+              <div class="box">
+                <p class="align-center">1/2</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="col-1-3">
+              <div class="box">
+                <p class="align-center">1/3</p>
+              </div>
+            </div>
+            <div class="col-1-3">
+              <div class="box">
+                <p class="align-center">1/3</p>
+              </div>
+            </div>
+            <div class="col-1-3">
+              <div class="box">
+                <p class="align-center">1/3</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="col-1-4">
+              <div class="box">
+                <p class="align-center">1/4</p>
+              </div>
+            </div>
+            <div class="col-1-4">
+              <div class="box">
+                <p class="align-center">1/4</p>
+              </div>
+            </div>
+            <div class="col-1-4">
+              <div class="box">
+                <p class="align-center">1/4</p>
+              </div>
+            </div>
+            <div class="col-1-4">
+              <div class="box">
+                <p class="align-center">1/4</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="col-1-5">
+              <div class="box">
+                <p class="align-center">1/5</p>
+              </div>
+            </div>
+            <div class="col-1-5">
+              <div class="box">
+                <p class="align-center">1/5</p>
+              </div>
+            </div>
+            <div class="col-1-5">
+              <div class="box">
+                <p class="align-center">1/5</p>
+              </div>
+            </div>
+            <div class="col-1-5">
+              <div class="box">
+                <p class="align-center">1/5</p>
+              </div>
+            </div>
+            <div class="col-1-5">
+              <div class="box">
+                <p class="align-center">1/5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="col-1-6">
+              <div class="box">
+                <p class="align-center">1/6</p>
+              </div>
+            </div>
+            <div class="col-1-6">
+              <div class="box">
+                <p class="align-center">1/6</p>
+              </div>
+            </div>
+            <div class="col-1-6">
+              <div class="box">
+                <p class="align-center">1/6</p>
+              </div>
+            </div>
+            <div class="col-1-6">
+              <div class="box">
+                <p class="align-center">1/6</p>
+              </div>
+            </div>
+            <div class="col-1-6">
+              <div class="box">
+                <p class="align-center">1/6</p>
+              </div>
+            </div>
+            <div class="col-1-6">
+              <div class="box">
+                <p class="align-center">1/6</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="col-1-7">
+              <div class="box">
+                <p class="align-center">1/7</p>
+              </div>
+            </div>
+            <div class="col-1-7">
+              <div class="box">
+                <p class="align-center">1/7</p>
+              </div>
+            </div>
+            <div class="col-1-7">
+              <div class="box">
+                <p class="align-center">1/7</p>
+              </div>
+            </div>
+            <div class="col-1-7">
+              <div class="box">
+                <p class="align-center">1/7</p>
+              </div>
+            </div>
+            <div class="col-1-7">
+              <div class="box">
+                <p class="align-center">1/7</p>
+              </div>
+            </div>
+            <div class="col-1-7">
+              <div class="box">
+                <p class="align-center">1/7</p>
+              </div>
+            </div>
+            <div class="col-1-7">
+              <div class="box">
+                <p class="align-center">1/7</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="col-1-8">
+              <div class="box">
+                <p class="align-center">1/8</p>
+              </div>
+            </div>
+            <div class="col-1-8">
+              <div class="box">
+                <p class="align-center">1/8</p>
+              </div>
+            </div>
+            <div class="col-1-8">
+              <div class="box">
+                <p class="align-center">1/8</p>
+              </div>
+            </div>
+            <div class="col-1-8">
+              <div class="box">
+                <p class="align-center">1/8</p>
+              </div>
+            </div>
+            <div class="col-1-8">
+              <div class="box">
+                <p class="align-center">1/8</p>
+              </div>
+            </div>
+            <div class="col-1-8">
+              <div class="box">
+                <p class="align-center">1/8</p>
+              </div>
+            </div>
+            <div class="col-1-8">
+              <div class="box">
+                <p class="align-center">1/8</p>
+              </div>
+            </div>
+            <div class="col-1-8">
+              <div class="box">
+                <p class="align-center">1/8</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="col-1-3">
+              <div class="box">
+                <p class="align-center">1/3</p>
+              </div>
+            </div>
+            <div class="col-2-3">
+              <div class="box">
+                <p class="align-center">2/3</p>
+              </div>
+            </div>
+          </div>
+
+          <code class="box">
+<pre>&lt;div class="grid"&gt;
+  &lt;div class="col-1-2"&gt;
+    …
+  &lt;/div&gt;
+  &lt;div class="col-1-2"&gt;
+    …
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+          </code>
+
+          <h3>Nested Grids</h3>
+          <p>You can also have grids inside of boxes or inside of other grids.</p>
+
+          <div class="box">
+            <div class="grid">
+              <div class="col-1-2">
+                <div class="box">
+                  <p class="align-center">1/2</p>
+                </div>
+              </div>
+              <div class="col-1-2">
+                <div class="box">
+                  <p class="align-center">1/2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <code class="box">
+<pre>&lt;div class="box"&gt;
+  &lt;div class="grid"&gt;
+    &lt;div class="col-1-2"&gt;
+      …
+    &lt;/div&gt;
+    &lt;div class="col-1-2"&gt;
+      …
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+          </code>
+        </section><!-- #the-grid -->
+
+        <section id="boxes">
+          <h2>Boxes</h2>
+          <p>Boxes are the basic building blocks of our UI for prototypes. For the most part, everything will go inside of a box.</p>
+
+          <div class="box">
+            <p>This is our most basic box.</p>
+          </div>
+
+          <code class="box">
+      <pre>&lt;div class="box"&gt; … &lt;/div&gt;</pre>
+          </code>
+
+          <div class="box">
+            <header>
+              <h4>Box heading</h4>
+            </header>
+            <p>Sometimes you want a box that has a heading like this.</p>
+          </div>
+
+          <code class="box">
+<pre>&lt;div class="box"&gt;
+  &lt;header&gt;
+    &lt;h4&gt;Box heading&lt;/h4&gt;
+  &lt;/header&gt;
+  …
+&lt;/div&gt;</pre>
+          </code>
+
+          <div class="box">
+            <p>And sometimes you want a box that has a footer like this...</p>
+            <footer>
+              <p>Box footer</p>
+            
+          </footer></div>
+
+          <code class="box">
+<pre>&lt;div class="box"&gt;
+  …
+  &lt;footer&gt;
+    &lt;p&gt;Box footer&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;</pre>
+          </code>
+        </section><!-- #boxes -->
+
+        <section id="typography">
+          <h2>Typography</h2>
+
+          <div class="box">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+
+            <br>
+
+            <p>This is a paragraph inside of prototype. You can have <strong>bold</strong> text or even <em>italic</em> text.</p>
+            <p>Paragraphs are spaced appropriately and you can even add <a href="#">links</a> like this!</p>
+
+            <br>
+
+            <ul class="disc">
+              <li>Some item</li>
+              <li>Another item</li>
+              <li>Last item</li>
+            </ul>
+
+            <ul class="circle">
+              <li>Some item</li>
+              <li>Another item</li>
+              <li>Last item</li>
+            </ul>
+
+            <ul class="square">
+              <li>Some item</li>
+              <li>Another item</li>
+              <li>Last item</li>
+            </ul>
+
+            <ol>
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ol>
+          </div>
+        </section><!-- #typography -->
+
+        <section id="horizontal-rules">
+          <h2>Horizontal Rules</h2>
+
+          <div class="box">
+            <p>Here is a horizontal rule inside of a box:</p>
+
+            <hr>
+
+            <p>You can make these go the full-width as well:</p>
+
+            <hr class="full">
+
+            <p>Sometimes you want a thicker horizontal rule:</p>
+
+            <hr class="full thick">
+          </div>
+
+          <code class="box code">
+<pre>&lt;hr /&gt;
+
+&lt;hr class="full" /&gt;
+
+&lt;hr class="full thick" /&gt;</pre>
+          </code>
+        </section><!-- #horizontal-rules -->
+
+        <section id="buttons">
+          <h2>Buttons</h2>
+          <div class="box">
+            <p><a href="#" class="button">Basic Button</a></p>
+            <p>Sometimes you want to group buttons like so:</p>
+            <p class="button-group">
+              <a href="#" class="button">First</a>
+              <a href="#" class="button">Second</a>
+              <a href="#" class="button">Third</a>
+            </p>
+            <p>Sometimes you want to group grouped buttons:</p>
+            <div class="button-toolbar">
+              <p class="button-group">
+                <a href="#" class="button">First</a>
+                <a href="#" class="button">Second</a>
+                <a href="#" class="button">Third</a>
+              </p>
+              <p class="button-group">
+                <a href="#" class="button">Fourth</a>
+                <a href="#" class="button">Fifth</a>
+                <a href="#" class="button">Sixth</a>
+              </p>
+            </div>
+          </div>
+
+          <code class="box">
+<pre># Basic button
+
+&lt;a href="#" class="button"&gt;Basic Button&lt;/a&gt;
+
+
+# Button group
+
+&lt;p class="button-group"&gt;
+  &lt;a href="#" class="button"&gt;First&lt;/a&gt;
+  &lt;a href="#" class="button"&gt;Second&lt;/a&gt;
+  &lt;a href="#" class="button"&gt;Third&lt;/a&gt;
+&lt;/p&gt;
+
+
+# Button toolbar
+
+&lt;div class="button-toolbar"&gt;
+  &lt;p class="button-group"&gt;
+    &lt;a href="#" class="button"&gt;First&lt;/a&gt;
+    &lt;a href="#" class="button"&gt;Second&lt;/a&gt;
+    &lt;a href="#" class="button"&gt;Third&lt;/a&gt;
+  &lt;/p&gt;
+  &lt;p class="button-group"&gt;
+    &lt;a href="#" class="button"&gt;Fourth&lt;/a&gt;
+    &lt;a href="#" class="button"&gt;Fifth&lt;/a&gt;
+    &lt;a href="#" class="button"&gt;Sixth&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+</pre>
+          </code>
+        </section><!-- #buttons -->
+
+        <section id="popovers">
+          <h2>Popovers and Helpers</h2>
+
+          <h3>Popovers - Above &amp; Below</h3>
+          <div class="box">
+            <div class="grid">
+              <div class="col-1-2">
+              <div class="p align-right">
+                <span style="position:relative;">Show popover <span class="popover below"><p>Here is a <strong>below</strong> popover</p></span></span>
+              </div>
+              </div>
+              <div class="col-1-2">
+              <div class="p align-left">
+                <span style="position:relative;">Show popover <span class="popover above"><p>Here is an <strong>above</strong> popover</p></span></span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <h3>Popovers - Left &amp; Right</h3>
+          <div class="box">
+            <div class="grid">
+              <div class="col-1-2">
+              <div class="p align-right">
+                <span style="position:relative;">Show popover <span class="popover right"><p>Here is a <strong>left</strong> popover</p></span></span>
+              </div>
+              </div>
+              <div class="col-1-2">
+              <div class="p align-left">
+                <span style="position:relative;">Show popover <span class="popover left"><p>Here is a <strong>right</strong> popover</p></span></span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <code class="box">
+<pre>&lt;span&gt;
+  Show popover
+  &lt;span class="popover above"&gt;
+    &lt;p&gt;Here is my popover&lt;/p&gt;
+  &lt;/span&gt;
+&lt;/span&gt;</pre>
+          </code>
+
+          <p><span class="tag">TODO:</span> <em>Write Javascript to trigger popovers. <strike>Create styles for right, left and below</strike> <em style="font-weight:bold;">- Please check</em>. Write out usage details (e.g. inline width and positioning).</em></p>
+
+          <br>
+
+          <h3>Helpers</h3>
+          <div class="box">
+            <div class="p align-center">
+              <span style="position:relative;">Show helper <span class="helper above"><p>Help</p></span></span>
+            </div>
+          </div>
+        </section>
+
+        <code class="box">
+<pre>&lt;span&gt;
+  Show helper
+  &lt;span class="helper above"&gt;
+    &lt;p&gt;Help&lt;/p&gt;
+  &lt;/span&gt;
+&lt;/span&gt;</pre>
+        </code>
+
+        <p><span class="tag">TODO:</span> <em>Write Javascript to trigger helpers. Create styles for right, left and below. Write out usage details (e.g. inline width and positioning).</em></p>
+
+        <section id="forms">
+          <h2>Forms</h2>
+          <p>Here's a form that has a class of "box" so that it will have the border</p>
+
+          <form class="box">
+            <p>
+              <label for="input-1">Some form label:</label>
+              <input id="input-1" type="text" placeholder="Some placeholder text">
+            </p>
+            <p>
+              <label for="textarea-1">A textarea:</label>
+              <textarea id="textarea-1"></textarea>
+            </p>
+
+            <footer>
+              <p>
+                <a href="#" class="button">Submit</a>
+              </p>
+            </footer>
+          </form>
+
+          <code class="box">
+<pre>&lt;form class="box"&gt;
+  &lt;p&gt;
+    &lt;label&gt;Some form label:&lt;/label&gt;
+    &lt;input type="text" placeholder="Some placeholder text" /&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;label&gt;A textarea:&lt;/p&gt;
+    &lt;textarea&gt;&lt;/textarea&gt;
+  &lt;/p&gt;
+  &lt;footer&gt;
+    &lt;p&gt;
+      &lt;a href="#" class="button"&gt;Submit&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/form&gt;</pre>
+          </code>
+
+          <p>If there was a use case where you needed to have the button area in combination with a separate footer, you can always use the thick horizontal rule to create the same effect.</p>
+
+          <h3>Form elements</h3>
+
+          <form class="box">
+            <p>
+              <label for="select">Select menu:</label>
+              <select id="select">
+                <option disabled="disabled">Choose one...</option>
+                <option>First option</option>
+                <option>Second option</option>
+              </select>
+            </p>
+            <p>
+              <label>Check boxes:</label>
+              <label class="inline"><input type="checkbox" name="checkbox-1"> First option</label> <label class="inline"><input type="checkbox" name="checkbox-2"> Second option</label> <label class="inline"><input type="checkbox" name="checkbox-3" checked="checked"> Third option</label>
+            </p>
+            <p>
+              <label>Radio buttons:</label>
+              <label class="inline"><input type="radio" name="radio-1"> First option</label> <label class="inline"><input type="radio" name="radio-1"> Second option</label> <label class="inline"><input type="radio" name="radio-1" checked="checked"> Third option</label>
+            </p>
+          </form>
+
+          <p><span class="tag">TODO:</span> <em>Stacked vs inline forms, form errors, toolbars in textareas, elements inside of text inputs, custom select menus.</em></p>
+        </section><!-- #forms -->
+
+        <section id="tables">
+          <h2>Tables</h2>
+          <p>We'll wrap tables in a div with a class of <code>.table-box</code> so that we have some more flexibility with adding headers and footers and so that we can have rounded corners. Here's our basic table:</p>
+          <div class="table-box">
+            <table>
+              <thead>
+                <tr>
+                  <th>Column 1</th>
+                  <th>Column 2</th>
+                  <th>Column 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Some data</td>
+                  <td>Some more data</td>
+                  <td>Data here</td>
+                </tr>
+                <tr>
+                  <td>Some data</td>
+                  <td>Some more data</td>
+                  <td>Data here</td>
+                </tr>
+                <tr>
+                  <td>Some data</td>
+                  <td>Some more data</td>
+                  <td>Data here</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <code class="box">
+<pre>&lt;div class="table-box"&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      …
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      …
+    &lt;/tbody&gt;
+  &lt;table&gt;
+&lt;/div&gt;</pre>
+          </code>
+
+          <p>Tables can also have sortable columns:</p>
+
+          <div class="table-box">
+            <table>
+              <thead>
+                <tr>
+                  <th class="sortable"><span>Column 1</span></th>
+                  <th class="sortable desc"><span>Column 2</span></th>
+                  <th class="sortable"><span>Column 3</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Some data</td>
+                  <td>Some more data</td>
+                  <td>Data here</td>
+                </tr>
+                <tr>
+                  <td>Some data</td>
+                  <td>Some more data</td>
+                  <td>Data here</td>
+                </tr>
+                <tr>
+                  <td>Some data</td>
+                  <td>Some more data</td>
+                  <td>Data here</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <code class="box">
+<pre>&lt;div class="table-box"&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th class="sortable"&gt;Column 1&lt;/th&gt;
+        &lt;th class="sortable desc"&gt;Column 2&lt;/th&gt;
+        &lt;th class="sortable"&gt;Column 3&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      …
+    &lt;/tbody&gt;
+  &lt;table&gt;
+&lt;/div&gt;</pre>
+          </code>
+
+          <p>Tables can also have headers and footers:</p>
+
+          <div class="table-box">
+            <header>
+              <p>This is a table header</p>
+            </header>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Column 1</th>
+                  <th>Column 2</th>
+                  <th>Column 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Some data</td>
+                  <td>Some more data</td>
+                  <td>Data here</td>
+                </tr>
+                <tr>
+                  <td>Some data</td>
+                  <td>Some more data</td>
+                  <td>Data here</td>
+                </tr>
+                <tr>
+                  <td>Some data</td>
+                  <td>Some more data</td>
+                  <td>Data here</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <footer>
+              <p>This is a table footer</p>
+            </footer>
+          </div>
+
+          <code class="box">
+<pre>&lt;div class="table-box"&gt;
+  &lt;header&gt;
+    &lt;p&gt;This is a table header&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      …
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      …
+    &lt;/tbody&gt;
+  &lt;table&gt;
+  &lt;footer&gt;
+    &lt;p&gt;This is a table footer&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;</pre>
+          </code>
+        </section><!-- #tables -->
+
+        <section id="navigation">
+          <h2>Navigation</h2>
+
+          <h3>Text Navigation</h3>
+          <p>Very basic text-based navigation with a bullet separating the links.</p>
+          <nav class="text-nav">
+            <a href="#">Link 1</a>
+            <a href="#" class="active">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+          </nav>
+
+          <h3>Breadcrumb Navigation</h3>
+          <p>Based on the text navigation above, but replacing the bullet with an arrow to show progression.</p>
+
+          <nav class="breadcrumb-nav">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#" class="active">Link 4</a>
+          </nav>
+
+          <h3>Tabbed Navigation</h3>
+          <p>Tabbed navigation is generally going to be used in conjunction with a box.</p>
+
+          <nav class="tab-nav">
+            <a href="#">Tab 1</a>
+            <a href="#" class="active">Tab 2</a>
+            <a href="#">Tab 3</a>
+            <a href="#">Tab 4</a>
+          </nav>
+          <div class="box">
+            <p>Tabbed navigation that is outside the box.</p>
+          </div>
+
+          <code class="box">
+<pre>&lt;nav class="tab-nav"&gt;
+  &lt;a href="#"&gt;Tab 1&lt;/a&gt;
+  &lt;a href="#" class="active"&gt;Tab 2&lt;/a&gt;
+  &lt;a href="#"&gt;Tab 3&lt;/a&gt;
+  &lt;a href="#"&gt;Tab 4&lt;/a&gt;
+&lt;/nav&gt;
+&lt;div class="box"&gt;
+  …
+&lt;/div&gt;</pre>
+          </code>
+
+          <div class="box">
+            <nav class="tab-nav">
+              <a href="#">Tab 1</a>
+              <a href="#" class="active">Tab 2</a>
+              <a href="#">Tab 3</a>
+              <a href="#">Tab 4</a>
+            </nav>
+            <p>Tabbed navigation that is inside the box.</p>
+          </div>
+
+          <code class="box">
+<pre>&lt;div class="box"&gt;
+  &lt;nav class="tab-nav"&gt;
+    &lt;a href="#"&gt;Tab 1&lt;/a&gt;
+    &lt;a href="#" class="active"&gt;Tab 1&lt;/a&gt;
+    &lt;a href="#"&gt;Tab 1&lt;/a&gt;
+    &lt;a href="#"&gt;Tab 1&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;</pre>
+          </code>
+
+          <h3>Box Navigation</h3>
+          <p>Box navigation stands alone — it doesn't need to be inside of a box.</p>
+
+          <nav class="box-nav">
+            <a href="#">Link 1</a>
+            <a href="#" class="active">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+          </nav>
+
+          <p>Sometimes you may want the box navigation to be inline so that it doesn't take up the entire width of the parent container.</p>
+
+          <div class="box-nav inline">
+            <a href="#">Link 1</a>
+            <a href="#" class="active">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+          </div>
+        </section><!-- #navigation -->
+
+        <!--<section id="modals">
+          <h2>Modals</h2>
+
+          <div class="box">
+            <p class="align-center">
+              <a href="#" data-reveal-id="modal-1">Show modal</a>
+            </p>
+          </div>
+
+          <p>Modals are invisible by default and will only be shown when triggered by a link.</p>
+          <p>We're using <a href="http://www.zurb.com/playground/reveal-modal-plugin">Zurb's Reveal Modal Plugin</a> to handle showing/hiding modals. The usage is pretty straight forward:</p>
+
+          <code class="box">
+<pre># On the link that triggers the modal:
+
+&lt;a href="#" data-reveal-id="my-modal"&gt;Show modal&lt;/a&gt;
+
+
+# The HTML for the modal
+
+&lt;div class="modal box" id="my-modal"&gt;
+  &lt;header&gt;
+    &lt;a href="#" class="close-modal close-modal-x"&gt;*&lt;/a&gt;
+    …
+  &lt;/header&gt;
+  &lt;form&gt;
+    …
+  &lt;/form&gt;
+  &lt;footer&gt;
+    &lt;a href="#" class="button"&gt;Send&lt;/a&gt; or &lt;a href="#" class="close-modal"&gt;Cancel&lt;/a&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;</pre>
+          </code>
+
+          <p>The important part is that the value of the <code>data-reveal-id</code> attribute on the anchor tag and the id of the modal are the same.</p>
+
+          <div class="modal box" id="modal-1">
+            <header>
+              <a href="#" class="close-modal close-modal-x">*</a>
+              <h4>Send a message</h4>
+            </header>
+
+            <form>
+              <p>
+                <label for="modal-name">Name:</label>
+                <input id="modal-name" type="text">
+              </p>
+              <p>
+                <label for="modal-email">Email address:</label>
+                <input id="modal-email" type="text">
+              </p>
+              <p>
+                <label for="modal-message">Message:</label>
+                <textarea id="modal-message"></textarea>
+              </p>
+              <footer>
+                <p>
+                  <a href="#" class="button">Send</a> or <a href="#" class="close-modal">Cancel</a>
+                </p>
+              </footer>
+            </form>
+          </div>
+
+          <code class="box">
+<pre>$(function(){
+
+  $('#my-button').click(function(e) {
+    e.preventDefault();
+    $('#my-modal').reveal();
+  });
+
+});</pre>
+          </code>
+
+          <p><span class="tag">TODO:</span> <em>Modal and modals inside of modals.</em></p>
+
+          <div class="modal box" style="display:none;">
+            <header>
+              <a href="#" class="close-modal close-modal-x">*</a>
+              <h4>Send a message</h4>
+            </header>
+
+            <form>
+              <p>
+                <label>Name:</label>
+                <input type="text">
+              </p>
+              <p>
+                <label>Email address:</label>
+                <input type="text">
+              </p>
+              <p>
+                <label>Message:</label>
+                <textarea></textarea>
+              </p>
+              <footer>
+                <p>
+                  <a href="#" class="button">Send</a> or <a href="#">Cancel</a>
+                </p>
+              </footer>
+            </form>
+
+            <div class="modal-modal box">
+              <header>
+                <a href="#" class="close-modal-modal close-modal-modal-x">*</a>
+                <h4>Add a link</h4>
+              </header>
+
+              <form>
+                <p>
+                  <label>Text for link:</label>
+                  <input type="text">
+                </p>
+                <p>
+                  <label>Web address:</label>
+                  <input type="text">
+                </p>
+                <footer>
+                  <p>
+                    <a href="#" class="button">Add link</a> or <a href="#">Cancel</a>
+                  </p>
+                </footer>
+              </form>
+            </div>
+          </div>
+        </section><!-- #modals -->
+        
+      </div><!-- .container -->
+    </div><!-- #main -->
+  </body>
+</html>
