@@ -18,51 +18,43 @@ Boxes are used as the basic building blocks for layouts.
   zoom: 1;
   padding: 20px;
   margin-bottom: 20px; }
-  .box:before, .table-box:before, .box:after, .table-box:after {
-    content: "";
-    display: table; }
-  .box:after, .table-box:after {
-    clear: both; }
-  .box:last-child, .table-box:last-child {
-    margin-bottom: 0; }
-  .box header, .table-box header,
-  .box footer,
-  .table-box footer {
-    zoom: 1;
-    clear: both;
-    padding: 20px;
-    position: relative; }
-    .box header:before, .table-box header:before, .box header:after, .table-box header:after,
-    .box footer:before,
-    .table-box footer:before,
-    .box footer:after,
-    .table-box footer:after {
-      content: "";
-      display: table; }
-    .box header:after, .table-box header:after,
-    .box footer:after,
-    .table-box footer:after {
-      clear: both; }
-  .box header, .table-box header {
-    border-bottom: 3px solid #333333; }
-    .box header h1, .table-box header h1, .box header h2, .table-box header h2, .box header h3, .table-box header h3, .box header h4, .table-box header h4, .box header p, .table-box header p {
-      margin-bottom: 0; }
-  .box footer, .table-box footer {
-    border-top: 3px solid #333333; }
-  .box > header, .table-box > header {
-    margin-top: -20px;
-    margin-right: -20px;
-    margin-bottom: 20px;
-    margin-left: -20px; }
-  .box > footer, .table-box > footer {
-    margin-top: 20px;
-    margin-right: -20px;
-    margin-bottom: -20px;
-    margin-left: -20px; }
+.box:before, .table-box:before, .box:after, .table-box:after {
+  content: "";
+  display: table; }
+.box:after, .table-box:after {
+  clear: both; }
+.box:last-child, .table-box:last-child {
+  margin-bottom: 0; }
+.box header, .table-box header, .box footer, .table-box footer {
+  zoom: 1;
+  clear: both;
+  padding: 20px;
+  position: relative; }
+.box header:before, .table-box header:before, .box header:after, .table-box header:after, .box footer:before, .table-box footer:before, .box footer:after, .table-box footer:after {
+  content: "";
+  display: table; }
+.box header:after, .table-box header:after, .box footer:after, .table-box footer:after {
+  clear: both; }
+.box header, .table-box header {
+  border-bottom: 3px solid #333333; }
+.box header h1, .table-box header h1, .box header h2, .table-box header h2, .box header h3, .table-box header h3, .box header h4, .table-box header h4, .box header p, .table-box header p {
+  margin-bottom: 0; }
+.box footer, .table-box footer {
+  border-top: 3px solid #333333; }
+.box > header, .table-box > header {
+  margin-top: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  margin-left: -20px; }
+.box > footer, .table-box > footer {
+  margin-top: 20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  margin-left: -20px; }
 
 .table-box {
   padding: 0; }
-  .table-box > header {
-    margin: 0; }
-  .table-box > footer {
-    margin: 0; }
+.table-box > header {
+  margin: 0; }
+.table-box > footer {
+  margin: 0; }

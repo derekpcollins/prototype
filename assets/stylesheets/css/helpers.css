@@ -24,21 +24,21 @@ Helpers can be used to provide help text to further explain something without ta
   position: absolute;
   text-align: center;
   width: 60px; }
-  .helper:before, .helper:after {
-    content: "";
-    display: table; }
-  .helper:after {
-    clear: both; }
-  .helper.above {
-    left: 50%;
-    margin-left: -36px;
-    /* (60+12)/2 */
-    bottom: 25px; }
-    .helper.above:after {
-      border-top: 6px solid #333333;
-      border-right: 6px solid transparent;
-      border-left: 6px solid transparent;
-      bottom: -6px;
-      left: 50%;
-      margin-left: -6px;
-      position: absolute; }
+.helper:before, .helper:after {
+  content: "";
+  display: table; }
+.helper:after {
+  clear: both; }
+.helper.above {
+  left: 50%;
+  margin-left: -36px;
+  /* (60+12)/2 */
+  bottom: 25px; }
+.helper.above:after {
+  border-top: 6px solid #333333;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -6px;
+  position: absolute; }

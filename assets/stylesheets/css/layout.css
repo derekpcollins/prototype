@@ -2,13 +2,13 @@
   zoom: 1;
   margin: 0 auto;
   width: 960px; }
-  .container:before, .container:after {
-    content: "";
-    display: table; }
-  .container:after {
-    clear: both; }
+.container:before, .container:after {
+  content: "";
+  display: table; }
+.container:after {
+  clear: both; }
 
 section {
   margin-bottom: 40px; }
-  section:last-child {
-    margin-bottom: 0; }
+section:last-child {
+  margin-bottom: 0; }

@@ -10,9 +10,9 @@ form label {
   display: block;
   font-weight: bold;
   margin-bottom: 4px; }
-  form label.inline {
-    display: inline;
-    font-weight: normal; }
+form label.inline {
+  display: inline;
+  font-weight: normal; }
 form input[type="text"], form input[type="password"] {
   border: 1px solid #333333;
   -webkit-border-radius: 5px;
@@ -75,18 +75,18 @@ input[type="radio"] {
   padding: 7px;
   position: relative;
   vertical-align: bottom; }
-  input[type="radio"]:checked:after {
-    background: #333333;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    content: '';
-    display: block;
-    height: 6px;
-    left: 4px;
-    position: absolute;
-    top: 4px;
-    width: 6px; }
+input[type="radio"]:checked:after {
+  background: #333333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  content: '';
+  display: block;
+  height: 6px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 6px; }
 
 input[type="checkbox"] {
   -webkit-appearance: none;
@@ -101,12 +101,12 @@ input[type="checkbox"] {
   padding: 7px;
   position: relative;
   vertical-align: bottom; }
-  input[type="checkbox"]:checked:after {
-    content: '3';
-    font-family: 'Pictos';
-    font-size: 11px;
-    font-weight: normal;
-    display: block;
-    left: 2px;
-    position: absolute;
-    top: 2px; }
+input[type="checkbox"]:checked:after {
+  content: '3';
+  font-family: 'Pictos';
+  font-size: 11px;
+  font-weight: normal;
+  display: block;
+  left: 2px;
+  position: absolute;
+  top: 2px; }

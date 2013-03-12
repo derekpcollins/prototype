@@ -12,20 +12,20 @@ Defines a few different types of navigation styles.
 ------------------------------------------------------------*/
 .text-nav, .breadcrumb-nav {
   margin-bottom: 20px; }
-  .text-nav a:after, .breadcrumb-nav a:after {
-    content: "\2022";
-    display: inline-block;
-    margin: 0 5px 0 7px; }
-  .text-nav a:last-child, .breadcrumb-nav a:last-child {
-    margin-right: 0; }
-    .text-nav a:last-child:after, .breadcrumb-nav a:last-child:after {
-      content: '';
-      margin-right: 0; }
-  .text-nav a.active, .breadcrumb-nav a.active {
-    font-weight: bold;
-    text-decoration: none; }
-    .text-nav a.active:hover, .breadcrumb-nav a.active:hover {
-      cursor: default; }
+.text-nav a:after, .breadcrumb-nav a:after {
+  content: "\2022";
+  display: inline-block;
+  margin: 0 5px 0 7px; }
+.text-nav a:last-child, .breadcrumb-nav a:last-child {
+  margin-right: 0; }
+.text-nav a:last-child:after, .breadcrumb-nav a:last-child:after {
+  content: '';
+  margin-right: 0; }
+.text-nav a.active, .breadcrumb-nav a.active {
+  font-weight: bold;
+  text-decoration: none; }
+.text-nav a.active:hover, .breadcrumb-nav a.active:hover {
+  cursor: default; }
 
 /* BREADCRUMB NAV: =breadcrumb-nav
 ------------------------------------------------------------*/
@@ -48,12 +48,12 @@ Defines a few different types of navigation styles.
   font-weight: bold;
   padding: 10px 12px;
   text-decoration: none; }
-  .tab-nav a.active {
-    background: #333333;
-    border-color: transparent;
-    color: #fff; }
-    .tab-nav a.active:hover {
-      cursor: default; }
+.tab-nav a.active {
+  background: #333333;
+  border-color: transparent;
+  color: #fff; }
+.tab-nav a.active:hover {
+  cursor: default; }
 .tab-nav + .box {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -69,24 +69,24 @@ Defines a few different types of navigation styles.
   margin-right: -20px;
   margin-bottom: 20px;
   margin-left: -20px; }
-  .box > .tab-nav:before, .box > .tab-nav:after {
-    content: "";
-    display: table; }
-  .box > .tab-nav:after {
-    clear: both; }
-  .box > .tab-nav a {
-    border: 0;
-    border-right: 1px solid #333333;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    float: left;
-    margin: 0 0 -1px 0;
-    padding: 10px 20px; }
-    .box > .tab-nav a.active {
-      background: #fff;
-      border-bottom: 1px solid #fff;
-      color: #333333; }
+.box > .tab-nav:before, .box > .tab-nav:after {
+  content: "";
+  display: table; }
+.box > .tab-nav:after {
+  clear: both; }
+.box > .tab-nav a {
+  border: 0;
+  border-right: 1px solid #333333;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  float: left;
+  margin: 0 0 -1px 0;
+  padding: 10px 20px; }
+.box > .tab-nav a.active {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  color: #333333; }
 
 /* BOX NAV: =box-nav
 ------------------------------------------------------------*/
@@ -97,23 +97,23 @@ Defines a few different types of navigation styles.
   border-radius: 5px;
   zoom: 1;
   margin-bottom: 20px; }
-  .box-nav:before, .box-nav:after {
-    content: "";
-    display: table; }
-  .box-nav:after {
-    clear: both; }
-  .box-nav a {
-    background: #fff;
-    border-right: 3px solid #333333;
-    display: block;
-    float: left;
-    font-weight: bold;
-    padding: 10px 12px;
-    text-decoration: none; }
-    .box-nav a.active {
-      background: #333333;
-      color: #fff; }
-  .box-nav.inline {
-    display: inline-block; }
-    .box-nav.inline a:last-child {
-      border-right: 0; }
+.box-nav:before, .box-nav:after {
+  content: "";
+  display: table; }
+.box-nav:after {
+  clear: both; }
+.box-nav a {
+  background: #fff;
+  border-right: 3px solid #333333;
+  display: block;
+  float: left;
+  font-weight: bold;
+  padding: 10px 12px;
+  text-decoration: none; }
+.box-nav a.active {
+  background: #333333;
+  color: #fff; }
+.box-nav.inline {
+  display: inline-block; }
+.box-nav.inline a:last-child {
+  border-right: 0; }

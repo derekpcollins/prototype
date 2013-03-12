@@ -22,16 +22,16 @@ Defines modal styles.
   margin-left: -370px;
   width: 740px;
   z-index: 2; }
-  .modal .close-modal-x {
-    color: #333333;
-    font-family: 'Pictos';
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    text-decoration: none; }
-  .modal header .close-modal-x {
-    top: 20px;
-    right: 20px; }
+.modal .close-modal-x {
+  color: #333333;
+  font-family: 'Pictos';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none; }
+.modal header .close-modal-x {
+  top: 20px;
+  right: 20px; }
 
 .modal-modal {
   left: 50%;
@@ -40,13 +40,13 @@ Defines modal styles.
   top: 120px;
   width: 640px;
   z-index: 3; }
-  .modal-modal .close-modal-modal-x {
-    color: #333333;
-    font-family: 'Pictos';
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    text-decoration: none; }
-  .modal-modal header .close-modal-modal-x {
-    top: 20px;
-    right: 20px; }
+.modal-modal .close-modal-modal-x {
+  color: #333333;
+  font-family: 'Pictos';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none; }
+.modal-modal header .close-modal-modal-x {
+  top: 20px;
+  right: 20px; }

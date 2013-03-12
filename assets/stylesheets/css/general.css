@@ -13,32 +13,31 @@ Defines some general and convenience styles.
   text-align: center; }
 
 i {
-  font-family: 'Pictos';
   font-style: normal;
   line-height: auto; }
-  i.large-icon {
-    font-size: 130px;
-    line-height: 120px; }
+i.large-icon {
+  font-size: 130px;
+  line-height: 120px; }
 
 hr {
   border: 0;
   border-top: 1px solid #333333;
   margin: 20px 0; }
-  hr.full {
-    margin-right: -20px;
-    margin-left: -20px; }
-  hr.thick {
-    border-top: 3px solid #333333; }
+hr.full {
+  margin-right: -20px;
+  margin-left: -20px; }
+hr.thick {
+  border-top: 3px solid #333333; }
 
 .success-message {
   font-weight: bold;
   font-style: italic; }
-  .success-message:before {
-    content: '2';
-    font-family: 'Pictos';
-    font-size: 18px;
-    font-style: normal;
-    margin-right: 4px; }
+.success-message:before {
+  content: '2';
+  font-family: 'Pictos';
+  font-size: 18px;
+  font-style: normal;
+  margin-right: 4px; }
 
 .disabled {
   opacity: .4; }
