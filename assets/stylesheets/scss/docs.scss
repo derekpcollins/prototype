@@ -10,10 +10,10 @@ body {
   padding: 40px 0;
 }
 
-code.box {
-  background: #F0FAFF;
-  border: 1px solid rgba(0,0,0,0.1);
-  display: block;
+pre code {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   padding: 20px;
 }
 
